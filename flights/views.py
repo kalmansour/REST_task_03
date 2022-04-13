@@ -8,7 +8,7 @@ from .models import Flight, Booking
 from .serializers import FlightSerializer, BookingSerializer, BookingDetailsSerializer, UpdateBookingSerializer
 
 
-class BookFlight(CreateAPIView):
+class CreateBooking(CreateAPIView):
 	serializer_class = UpdateBookingSerializer
 
 	def perform_create(self, serializer):
